@@ -12,12 +12,12 @@ def calculate_frequences(text: str) -> dict:
 
 def filter_stop_words(frequencies: dict, stop_words: tuple) -> dict:
     """
-    Removes all stop words from the given frequencies dictionary
+    Removes all stop words from the given frequencies dictionary3123
     """
     pass
 
 def get_top_n(frequencies: dict, top_n: int) -> tuple:
     """
-    Takes first N popular words
+    Takes first N popular
     """
     pass
