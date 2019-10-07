@@ -16,7 +16,8 @@ def calculate_frequences(text):
             if word not in word_freq:
                 word_freq[word] = 0
             word_freq[word] += 1
-        del word_freq['']
+        if '' in word_freq:
+            del word_freq['']
         return word_freq
 
 def filter_stop_words(frequencies, stop_words):
