@@ -12,10 +12,10 @@ def calculate_frequences(text):
             text = text.lower()
             text = text.replace(sign, ' ')
             text_list = text.split()
-    for word in text_list:
-        if word not in word_freq:
-            word_freq[word] = 0
-        word_freq[word] += 1
+            for word in text_list:
+                if word not in word_freq:
+                    word_freq[word] = 0
+                word_freq[word] += 1
     return word_freq
 
 def filter_stop_words(frequencies, stop_words):
