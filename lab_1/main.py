@@ -9,7 +9,7 @@ def calculate_frequences(text):
     else:
         text = text.lower()
         text = text.split()
-        signs = '.,:;!?-()"«»<>0123456789@$%*&^%\'\n'
+        signs = '.,:;!?-()"«»<>0123456789@$%*&^%~\'\n'
         word_freq = {}
         for sign in text:
             word = sign.strip(signs)
