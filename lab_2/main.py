@@ -59,7 +59,7 @@ def find_distance(original_word: str,
         return -1
     matrix = tuple(generate_edit_matrix(len(original_word) + 1, len(target_word) + 1))
     matrix = initialize_edit_matrix(matrix, add_weight, remove_weight)
-    matrix = fill_edit_matrix(tuple(matrix), add_weight, remove_weight, substitute_weight)
+    matrix = fill_edit_matrix(tuple(matrix), add_weight, remove_weight, substitute_weight, original_word, target_word)
     distance = matrix[-1][-1]
     return distance
 
