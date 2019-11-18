@@ -29,7 +29,9 @@ def minimum_value(numbers: tuple) -> int:
 def fill_edit_matrix(edit_matrix: tuple,
                     add_weight: int,
                     remove_weight: int,
-                    substitute_weight: int) -> list:
+                    substitute_weight: int,
+                    original_word: str,
+                    target_word: str) -> list:
     matrix = list(edit_matrix)
     if type(add_weight) != int or type(remove_weight) != int or type(substitute_weight) != int:
         return matrix
@@ -78,4 +80,3 @@ def save_to_csv(edit_matrix: tuple, path_to_file: str) -> None:
             for column in row:
                 line += (str(column) + ',')
             file.write(line[:-1] + '\n')
-        
