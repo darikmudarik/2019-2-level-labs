@@ -3,7 +3,7 @@ Labour work #3
  Building an own N-gram model
 """
 
-import math
+from math import log
 
 REFERENCE_TEXT = ''
 if __name__ == '__main__':
